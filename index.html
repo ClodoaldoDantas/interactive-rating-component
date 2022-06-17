@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Frontend Mentor | Interactive rating component hub</title>
+  </head>
+  <body>
+    <div class="card" id="card-rating">
+      <div class="card-header">
+        <div class="icon-wrapper">
+          <img src="assets/icon-star.svg" alt="star icon" />
+        </div>
+      </div>
+
+      <div class="card-body">
+        <h2>How did we do ?</h2>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <div class="ratings">
+          <button type="button" class="btn-rating">1</button>
+          <button type="button" class="btn-rating">2</button>
+          <button type="button" class="btn-rating">3</button>
+          <button type="button" class="btn-rating">4</button>
+          <button type="button" class="btn-rating">5</button>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <button id="send">Submit</button>
+      </div>
+    </div>
+
+    <div class="card d-none" id="card-success">
+      <div class="card-header">
+        <img
+          src="assets/illustration-thank-you.svg"
+          alt="Illustration thank you!"
+        />
+
+        <div class="info">
+          You selected <span id="value-selected"></span> out of 5
+        </div>
+      </div>
+
+      <div class="card-body">
+        <h2>Thank you!</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
